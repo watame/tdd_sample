@@ -1,0 +1,15 @@
+{
+    // 開発用コンテナ名
+    "name": "tdd_sample_dev",
+    // 開発用コンテナに利用するdocker-compose.ymlを指定
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    // volumeで指定したworkspace
+    "workspaceFolder": "/sample",
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "ms-python.python"
+    ]
+}

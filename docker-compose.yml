@@ -1,0 +1,16 @@
+# Docker Compose バージョンに対応するファイルバージョンを指定
+version: '3'
+services:
+  app:
+    build:
+      # ビルドの起点となるパスとしてカレントディレクトリを指定
+      context: .
+      dockerfile: container/Dockerfile
+      # Dockerfileの引数としてWORKDIRのパスを作成
+      args:
+        SOURCE_DIR: /sample
+    tty: true
+    stdin_open: true
+    volumes:
+      # メインプログラムファイルをコンテナにマウント
+      - ./sample:/sample
