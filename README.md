@@ -3,18 +3,25 @@
 わかり悪いところとかあったら指摘をお願いします！
 
 # レポジトリ構成
-座学とサンプルで構成されている。
+座学用テキスト、コードサンプル、実行環境用コンテナ設定で構成されている。
 ```
 tdd_sample
-    ├── README.md
+    ├── .devcontainer
+    ├── container
+    │   └── Dockerfile
     ├── sample
+    │   ├── test
+    │   │   └── test_sample.py
     │   ├── main.py
-    │   └── test.py
+    │   ├── poetry.lock
+    │   └── pyproject.toml
+    ├── docker-compose.yml
+    ├── README.md
     ├── テストで考えたい観点.md
     └── テスト駆動開発のやり方.md
 ```
 
-# 起動方法
+# お試し環境の起動方法
 DockerCompose, RemoteContainer のどちらでも起動できる
 
 ## DockerCompose
