@@ -1,0 +1,4 @@
+# python仮想環境の.venvをバージョン管理から除外
+sample/.venv/*
+# dev-continer更新時の自動生成ディレクトリはバージョン管理から除外
+sample/tmp/*
