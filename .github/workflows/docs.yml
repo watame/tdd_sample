@@ -31,7 +31,7 @@ jobs:
           poetry install
       - name: Create document
         working-directory: ./sample
-        run: poetry run pdoc -o docs/ module test main.py
+        run: poetry run pdoc -o docs/ module test
       - uses: actions/upload-pages-artifact@v1
         with:
           path: ./sample/docs/
