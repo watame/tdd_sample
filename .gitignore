@@ -2,3 +2,5 @@
 sample/.venv/*
 # dev-continer更新時の自動生成ディレクトリはバージョン管理から除外
 sample/tmp/*
+# 関数のpychacheをバージョン管理から除外
+__pycache__
