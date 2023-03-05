@@ -1,3 +1,5 @@
+# 公式ドキュメントを参考に実装
+# https://github.com/mitmproxy/pdoc/blob/main/.github/workflows/docs.yml
 name: pdoc
 
 # build the documentation whenever there are new commits on main
