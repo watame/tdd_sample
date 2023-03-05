@@ -5,9 +5,9 @@
 
 
 def fizzbuzz(number: int):
-    """数値に対応して 'Fizz', 'Buzz', 'FizzBuzz' いずれかの文字列を戻す
+    """数値に対応した 'Fizz', 'Buzz', 'FizzBuzz' いずれかの文字列を戻します
 
-    numberの値に応じて、下記の文字列を戻します。
+    numberの値に応じて、下記の文字列を戻します
     - 3の倍数 -> 'Fizz'を表示
     - 5の倍数 -> 'Buzz'を表示
     - 3の倍数 or 5の倍数 -> 'FizzBuzz'を表示
