@@ -26,9 +26,9 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: poetry install
       - run: |
-          python pip install poetry
+          pip install poetry
+          poetry install
           poetry run pdoc -o docs/ module test main.py
 
       - uses: actions/upload-pages-artifact@v1
