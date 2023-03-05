@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         working-directory: ./sample
         run: |
-          pip install poetry
+          pip install poetry &&  poetry config virtualenvs.in-project true
           poetry install
           poetry run pdoc -o docs/ module test main.py
 
