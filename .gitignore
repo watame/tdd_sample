@@ -4,3 +4,5 @@ sample/.venv/*
 sample/tmp/*
 # 関数のpychacheをバージョン管理から除外
 __pycache__
+# 環境変数をGitHubで管理しない
+.env

@@ -9,6 +9,8 @@ services:
       # Dockerfileの引数としてWORKDIRのパスを作成
       args:
         SOURCE_DIR: /sample
+    env_file:
+      - .env.local
     tty: true
     stdin_open: true
     volumes:
